@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopKit Pro: the business toolkit for online sellers</title>
+<meta name="description" content="Profit calculator, cash flow, inventory, invoices, quotes and contracts in one toolkit for online sellers. No subscription.">
+<style>
+:root{--bg:#f7f8fc;--card:#fff;--ink:#1c2033;--mute:#60667d;--line:#e3e6ef;--acc:#4f46e5;--acc2:#eef0ff;--ok:#0f9d58}
+@media (prefers-color-scheme:dark){:root{--bg:#10121b;--card:#181b28;--ink:#eceefb;--mute:#9aa0b8;--line:#2a2e42;--acc:#7c76ff;--acc2:#22254a}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px}
+section{padding:40px 0}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.15;margin:0 0 14px}
+h2{font-size:clamp(22px,4.5vw,30px);margin:0 0 8px}
+p{margin:0 0 12px}.mute{color:var(--mute)}
+.btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;padding:14px 22px;border-radius:12px}
+.btn.alt{background:var(--acc2);color:var(--acc)}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.tag{display:inline-block;background:var(--acc2);color:var(--acc);font-weight:700;font-size:13px;padding:4px 12px;border-radius:99px;margin-bottom:14px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--mute);font-size:15px}
+.steps{counter-reset:s;padding:0;list-style:none;margin:18px 0 0}
+.steps li{counter-increment:s;display:flex;gap:12px;margin-bottom:12px}
+.steps li:before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;display:grid;place-items:center}
+.price{text-align:center;border:2px solid var(--acc)}
+.price .amt{font-size:48px;font-weight:800;line-height:1.1}
+.price ul{list-style:none;padding:0;margin:16px 0;text-align:left;display:inline-block}
+.price li:before{content:"\2713  ";color:var(--ok);font-weight:700}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}details p{margin:10px 0 0;color:var(--mute)}
+footer{padding:30px 0 50px;color:var(--mute);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section id="top">
+  <span class="tag" id="tag"></span>
+  <h1>Know your real profit. Run your whole store from one toolkit.</h1>
+  <p class="mute" style="font-size:18px">Profit calculator, cash flow, inventory, invoices, quotes and contracts in one app that runs in your browser. One payment, no subscription.</p>
+  <div class="ctas">
+    <a class="btn" id="buy1" href="#price">Get ShopKit Pro</a>
+    <a class="btn alt" href="index.html#profit">Try the live demo</a>
+    <a class="btn alt" id="wa1" href="#">Ask on WhatsApp</a>
+  </div>
+</section>
+
+<section>
+  <h2>Most sellers don't know what they actually keep</h2>
+  <p class="mute">Platform fees, payment fees, shipping, ads and returns quietly eat the margin. A product that looks profitable on paper can lose money per order. Meanwhile stock, orders and invoices live in five different spreadsheets.</p>
+  <p>ShopKit Pro puts the numbers in one place, so you can decide what to scale and what to drop.</p>
+</section>
+
+<section>
+  <h2>What's inside</h2>
+  <div class="grid">
+    <div class="card"><h3>True Profit Calculator</h3><p>Profit per sale after fees, shipping, ads and returns. Shows your break-even ROAS and the maximum you can spend on ads.</p></div>
+    <div class="card"><h3>Cash Flow</h3><p>Log income and expenses, see a monthly summary, export to CSV for your accountant.</p></div>
+    <div class="card"><h3>Inventory, Orders &amp; Returns</h3><p>Stock updates when you log orders and returns. Low-stock alerts tell you when to reorder.</p></div>
+    <div class="card"><h3>Invoices &amp; Quotes</h3><p>Numbered documents with your business name, tax and notes. Print or save as PDF.</p></div>
+    <div class="card"><h3>Contract Templates</h3><p>Service agreement and simple NDA you can fill in and edit. Starting points to review with your own lawyer.</p></div>
+    <div class="card"><h3>Dashboard</h3><p>Income, expenses, net cash, stock value, open orders and margin at a glance, with backup and restore.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><div><b>Buy once.</b> You receive the full source code right after payment.</div></li>
+    <li><div><b>Open index.html.</b> It runs in any browser. Or host it free on GitHub Pages.</div></li>
+    <li><div><b>Add your products and numbers.</b> Everything is saved privately in your browser. Export a backup any time.</div></li>
+  </ol>
+</section>
+
+<section id="price">
+  <div class="card price">
+    <span class="tag" id="tag2"></span>
+    <div class="amt" id="amt"></div>
+    <p class="mute" id="priceNote"></p>
+    <ul>
+      <li>All 6 tools, full source code</li>
+      <li>Commercial license (see FAQ)</li>
+      <li>Free updates</li>
+      <li id="guar"></li>
+    </ul>
+    <div><a class="btn" id="buy2" href="#">Buy ShopKit Pro</a></div>
+    <p style="margin-top:14px"><a id="wa2" href="#" style="color:var(--acc);font-weight:700">Questions? Chat with me on WhatsApp</a></p>
+  </div>
+</section>
+
+<section>
+  <h2>Questions</h2>
+  <details><summary>Do I need to know how to code?</summary><p>No. Open the file and use it. If you can code, you can also edit it freely.</p></details>
+  <details><summary>Where is my data stored?</summary><p>Only in your own browser. Nothing is sent to a server. Use the Export backup button regularly, because clearing browser data erases it.</p></details>
+  <details><summary>Does it connect to Shopify, Etsy or Amazon?</summary><p>No. It is a standalone toolkit where you enter your numbers yourself. That is why it is private, fast and has no monthly fee.</p></details>
+  <details><summary>Can I use it for my clients?</summary><p id="licenseText"></p></details>
+  <details><summary>Are the contracts legally valid?</summary><p>They are general templates, not legal advice. Have a lawyer review them before using them with clients.</p></details>
+</section>
+
+<section style="text-align:center">
+  <h2>See it before you buy</h2>
+  <p class="mute">The live demo is the real app. Add a product, log an order and watch the numbers update.</p>
+  <div class="ctas" style="justify-content:center"><a class="btn alt" href="index.html#inv">Open the demo</a></div>
+</section>
+
+<footer>&copy; <span id="yr"></span> ShopKit Pro</footer>
+</div>
+
+<script>
+/* EDIT THESE VALUES */
+const CONFIG={
+  buyUrl:'',                       // paste your Gumroad product link here (optional)
+  whatsapp:'212691532884',         // WhatsApp number, international format, no + or spaces
+  price:'$497',
+  priceNote:'One payment. No subscription.',
+  tag:'Early access',
+  guarantee:'14-day money-back guarantee',
+  license:'Yes. The license lets you use it for your own stores and for your clients\' stores. You may not resell or share the source code itself.'
+};
+const $=id=>document.getElementById(id);
+$('tag').textContent=CONFIG.tag;$('tag2').textContent=CONFIG.tag;
+$('amt').textContent=CONFIG.price;$('priceNote').textContent=CONFIG.priceNote;
+$('guar').textContent=CONFIG.guarantee;$('licenseText').textContent=CONFIG.license;
+$('yr').textContent=new Date().getFullYear();
+const WA='https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent('Hi, I am interested in ShopKit Pro');
+['wa1','wa2'].forEach(id=>{const a=$(id);a.href=WA;a.target='_blank';a.rel='noopener'});
+['buy1','buy2'].forEach(id=>{const a=$(id);
+  if(CONFIG.buyUrl){a.href=CONFIG.buyUrl;a.target='_blank';a.rel='noopener'}
+  else if(id==='buy2'){a.href=WA;a.target='_blank';a.rel='noopener';a.textContent='Buy on WhatsApp'}});
+</script>
+</body>
+</html>
